@@ -1,0 +1,88 @@
+.figure {
+  position: absolute;
+}
+
+.red {
+  display: inline-block;
+  height: 0px;
+  width: 0px;
+  border-top: 150px solid transparent;
+  border-right: 150px solid red;
+  border-bottom: 150px solid transparent;
+  rotate: 90deg;
+}
+
+.yellow {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 150px solid rgb(255, 174, 0);
+  border-left: 150px solid transparent;
+  rotate: -90deg;
+}
+
+.blue {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 75px solid transparent;
+  border-bottom: 75px solid transparent;
+  border-left: 75px solid rgb(4, 0, 255);
+}
+
+.brown {
+  display: inline-block;
+  rotate: -90deg;
+  height: 0;
+  width: 0;
+  border-top: 150px solid rgb(128, 41, 41);
+  border-left: 150px solid transparent;
+}
+
+.orange {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  border-top: 75px solid rgb(255, 145, 0);
+  border-right: 75px solid transparent;
+  border-left: 75px solid transparent;
+}
+
+.green {
+  width: 0;
+  height: 0;
+  position: relative;
+  border: 75px solid transparent;
+  border-bottom-color: green;
+}
+
+.green:after {
+  width: 0;
+  height: 0;
+  content: '';
+  position: absolute;
+  left: -75px;
+  top: 75px;
+  border: 75px solid transparent;
+  border-top-color: green;
+}
+
+.purple {
+  width: 50px;
+  height: 0;
+  border-top: 75px solid rgb(128, 0, 111);
+  border-right: 75px solid transparent;
+}
+
+.purple:after {
+  width: 50px;
+  height: 0;
+  content: '';
+  border-bottom: 75px solid rgb(128, 0, 111);
+  border-left: 75px solid transparent;
+  border-right: 25px solid transparent;
+  position: absolute;
+  top: -75px;
+  right: 0px;
+}
